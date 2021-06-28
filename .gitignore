@@ -1,6 +1,6 @@
 HELP.md
 mvnw.cmd
-mvnw.Archivo
+mvnw/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
