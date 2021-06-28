@@ -10,11 +10,19 @@ import edu.escuelaing.arsw.springBoard.cache.SavePoints;
 @SpringBootTest
 class SpringBoardApplicationTests {
 
-	
+	@Test
 	public void testCache1() {
 		SavePoints cache = SavePoints.getInstance();
 		cache.addPositions("{\"newpointsarr\":[]}");
 		assertEquals("{\"newpointsarr\":[]}",cache.getPositions());
 	}
+	
+	@Test
+	public void testCache2() {
+		SavePoints cache = SavePoints.getInstance();
+		cache.addPositions("{\"newpointsarr\":[[117,310],[117,310],[117,310],[117,310]]}");
+		assertEquals("{\"newpointsarr\":[[117,310],[117,310],[117,310],[117,310]]}",cache.getPositions());
+	}
 
 }
+
