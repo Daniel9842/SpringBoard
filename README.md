@@ -13,13 +13,21 @@ Para la ejecución local se debe ejecutar la clase SpringBoardDraw y en el naveg
 
 ## Ejecución en Heroku
 
-El tablero está desplegado en heroku, el color por defecto para dibujar es negro, se puede cambiar de color seleccionando el color.
+El tablero está desplegado en heroku, el color por defecto para dibujar es negro, 
+se puede cambiar de color seleccionando el color.
+
 ![Heroku Heroku](image/heroku1.PNG "Heroku HerokuPaso1")<br>
+
 Se comienza a dibujar en el tablero.
+
 ![Heroku Heroku](image/heroku2.PNG "Heroku HerokuPaso2")<br>
+
 Posteriormente el dibujo realizado debe aparecer en otra ventana.
+
 ![Heroku Heroku](image/heroku3.PNG "Heroku HerokuPaso3")<br>
+
 Al seleccionar el botón borrar se borra lo realizado en el tablero.
+
 ![Heroku Heroku](image/heroku1.PNG "Heroku HerokuPaso4")<br>
 
 ## Diagrama de clases
