@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"edu.escuelaing.arsw.springBoard.controller","l":"BoardController"},{"p":"edu.escuelaing.arsw.springBoard.cache","l":"SavePoints"},{"p":"edu.escuelaing.arsw.springBoard","l":"SpringBoardDraw"}];updateSearchResults();
