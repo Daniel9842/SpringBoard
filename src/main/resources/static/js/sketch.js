@@ -47,7 +47,7 @@ function getPointsCacheUser(){
 	//Esta función se ejecuta una sola vez al inicio del script.
 	function setup() {
 		  createCanvas(640, 480);
-		   background(184, 184, 161);
+	      background(184, 184, 161);
 
 		 
 	}
