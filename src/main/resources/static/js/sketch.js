@@ -1,7 +1,7 @@
 let points = {pointsarr:[]};
 let allPoints={newpointsarr:[]};
 let timerId = setInterval(() => checkPoints(),5000);
-let timer = setInterval(() => getPoints(),1000);
+let timer = setInterval(() => getPointsCacheUser(),1000);
 let num1=0;
 let num2=0;
 let num3=0;
@@ -25,7 +25,7 @@ function checkPoints(){
          .then(res=> res.json())
  }
  // Obtiene los puntos de la cache de java.
-function getPoints(){
+function getPointsCacheUser(){
 	fetch("/newPoints",{
              method: 'POST',
              headers: {
@@ -37,7 +37,7 @@ function getPoints(){
 		 .then(resultPoints => console.log(resultPoints));
 	
 	for(let i = 0; i < allPoints.newpointsarr.length; i++) {
-			newDraw(allPoints.newpointsarr[i][0],allPoints.newpointsarr[i][1]);
+			newDrawUser(allPoints.newpointsarr[i][0],allPoints.newpointsarr[i][1]);
 
 		
 	}
@@ -63,7 +63,7 @@ function getPoints(){
   
 	}
 	//Dibuja las nuevas posiciones.
-	function newDraw(posX,posY) {
+	function newDrawUser(posX,posY) {
 		noStroke();
   		fill(num1,num2,num3);
     	ellipse(posX, posY, 20, 20);
