@@ -44,8 +44,8 @@ El paquete  cache contiene la clase savePoints que se encarga de almacenar y ret
 ## Reporte de pruebas
 Se realiza el reporte de pruebas con todas las pruebas satisfactorias.
 - Se realizan dos pruebas en la que se envían cadenas a la clase savePoints y se verifica que retorne los puntos correctamente.
-  ![Tests Test Report](images/test.PNG "Test Report")<br>
+ ![Tests Test Report](image/test.PNG "Test Report")<br>
 
 
 ### Productividad
-La productividad de este proyecto fue de 250LOC/5 horas .
+La productividad de este proyecto fue de 224LOC/20 horas .
