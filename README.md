@@ -18,7 +18,7 @@ El tablero está desplegado en heroku, el color por defecto para dibujar es negr
 Se comienza a dibujar en el tablero.
 ![Heroku Heroku](image/heroku2.PNG "Heroku HerokuPaso2")<br>
 Posteriormente el dibujo realizado debe aparecer en otra ventana.
-![Heroku Heroku](images/heroku3.PNG "Heroku test3")<br>
+![Heroku Heroku](image/heroku3.PNG "Heroku HerokuPaso3")<br>
 Al seleccionar el botón borrar se borra lo realizado en el tablero.
 ![Heroku Heroku](image/heroku1.PNG "Heroku HerokuPaso4")<br>
 
