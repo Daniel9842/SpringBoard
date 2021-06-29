@@ -46,7 +46,10 @@ function getPointsCacheUser(){
 	//Este código asume que las librerías de P5.js ya están cargadas.
 	//Esta función se ejecuta una sola vez al inicio del script.
 	function setup() {
-  		createCanvas(640, 480);
+		  createCanvas(640, 480);
+		   background(184, 184, 161);
+
+		 
 	}
 	// Esta función se ejecuta repetidas veces indefinidamente.
 	function draw() {
