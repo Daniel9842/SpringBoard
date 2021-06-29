@@ -9,14 +9,18 @@ import edu.escuelaing.arsw.springBoard.cache.SavePoints;
 
 @SpringBootTest
 class SpringBoardApplicationTests {
-
+	/**
+	 * this test verifies that the saved points are returned correctly
+	 */
 	@Test
 	public void testCache1() {
 		SavePoints cache = SavePoints.getInstance();
 		cache.addPositions("{\"newpointsarr\":[]}");
 		assertEquals("{\"newpointsarr\":[]}",cache.getPositions());
 	}
-	
+	/**
+	 * this test verifies that the saved points are returned correctly
+	 */
 	@Test
 	public void testCache2() {
 		SavePoints cache = SavePoints.getInstance();
