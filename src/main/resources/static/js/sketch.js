@@ -5,6 +5,7 @@ let timer = setInterval(() => getPointsCacheUser(),1000);
 let num1=0;
 let num2=0;
 let num3=0;
+
 //cambia el color
 function changeColor(number1,number2,number3){
 	num1=number1;
@@ -14,7 +15,7 @@ function changeColor(number1,number2,number3){
 //Envia los puntos a la cache en java. 
 function checkPoints(){
     let msg = points;
-    points = {pointsarr:[]};    
+	points = {pointsarr:[]}; 
          fetch("/points",{
              method: 'POST',
              headers: {
@@ -37,8 +38,7 @@ function getPointsCacheUser(){
 		 .then(resultPoints => console.log(resultPoints));
 	
 	for(let i = 0; i < allPoints.newpointsarr.length; i++) {
-			newDrawUser(allPoints.newpointsarr[i][0],allPoints.newpointsarr[i][1]);
-
+			newDrawUser(allPoints.newpointsarr[i][0],allPoints.newpointsarr[i][1],allPoints.newpointsarr[i][2],allPoints.newpointsarr[i][3],allPoints.newpointsarr[i][4]);
 		
 	}
 	
@@ -54,8 +54,7 @@ function getPointsCacheUser(){
 		noStroke();
     	fill(num1,num2,num3);
     	ellipse(mouseX, mouseY, 20, 20);
-		points.pointsarr.push([mouseX,mouseY]);
-		//points.pointsarr.push([num1,num2,num3]);
+		points.pointsarr.push([mouseX,mouseY,num1,num2,num3]);
   	}
   		if (mouseIsPressed === false) {
     	fill(255,255,255);
@@ -63,9 +62,9 @@ function getPointsCacheUser(){
   
 	}
 	//Dibuja las nuevas posiciones.
-	function newDrawUser(posX,posY) {
+	function newDrawUser(posX,posY,color1,color2,color3) {
 		noStroke();
-  		fill(num1,num2,num3);
+  		fill(color1,color2,color3);
     	ellipse(posX, posY, 20, 20);
 	}
 
